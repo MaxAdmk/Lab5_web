@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweatshirts</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    <header class="header container">
+        <div class="logo container">Sweatshirts</div>
+        <nav>
+            <ul>
+                <li><button class="nav-button home_page">Home</button></li>
+                <li><button class="nav-button create_page">Create</button></li>
+                <li><button class="nav-button edit_page">Edit</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="controls">
+            <div class="find_sweatshirt ">
+                <h4>Find sweatshirt</h4>
+                <input id="find_input" type="text" class="form-control" />
+                <button id="find_button" type="button" class="btn">
+                Find
+                </button>
+            </div>
+            <div class="prices_summ ">
+                <h4>Summ the prices</h4>
+                <button id="summ_button" type="button" class="btn">
+                Summ up
+                </button>
+            </div>
+            <div class="sort_by_prices ">
+                <h4>Sort by prices</h4>
+                <button id="sort_button" type="button" class="btn">
+                Sort
+                </button>
+            </div>
+        </div>
+        <ul id="items-container">
+        </ul>
+    </div>
+    <script type="module" src="./js/summ_up.js"></script>
+    <script src="./js/local_storage_loading_main.js"></script>
+    <script src="./js/find.js"></script>
+    <script type="module" src="./js/sort.js"></script>
+    <script src="./js/page_loading.js"></script>
+</body>
+</html>

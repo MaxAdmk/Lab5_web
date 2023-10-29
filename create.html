@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Sweatshirts</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="logo container">Sweatshirts</div>
+        <nav>
+            <ul>
+                <li><button class="nav-button home_page">Home</button></li>
+                <li><button class="nav-button create_page">Create</button></li>
+                <li><button class="nav-button edit_page">Edit</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form">
+            <form id="add_form">
+                <h3>Create the product</h3>
+                <div class="form_tittle_part">
+                    <label for="exampleInputEmail1" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title_input" />
+                </div>
+                <div class="form_price_part">
+                    <label for="exampleInputPassword1" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="price_input" />
+                </div>
+                <button id="submit_button" type="submit" class="btn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./js/product_creation.js"></script>
+    <script src="./js/page_loading.js"></script>
+</body>
+</html>
